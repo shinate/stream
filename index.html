@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="//g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/skins/default/aliplayer-min.css" />
+    <script charset="utf-8" type="text/javascript" src="//g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/aliplayer-h5-min.js"></script>
+</head>
+<body>
+    <div id="J_prismPlayer"></div>
+    <script>
+        var player = new Aliplayer({
+            id: 'J_prismPlayer',
+            source: 'rtmp://stream.codante.org/live/0?auth_key=1691258817-0-0-f24f2876104df45c7653e9d46e4a84b5',
+            isLive: true,
+        }, function(player){
+            console.log('The player is created.')
+        });
+    </script>
+</body>
